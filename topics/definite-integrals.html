@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Definite Integrals | Integral Flashcards</title>
+  <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+  <div class="page-transition"></div>
+  
+  <header>
+    <h1>Definite Integrals</h1>
+    <a href="../index.html" class="back-link">← Back to Topics</a>
+  </header>
+  
+  <main>
+    <section class="topic-explanation">
+      <h2>Understanding Definite Integrals</h2>
+      <p>A definite integral represents the signed area between a function and the x-axis over a specific interval.</p>
+      <p>The definite integral of f(x) from a to b is written as ∫ₐᵇf(x)dx.</p>
+      <p>The Fundamental Theorem of Calculus connects definite integrals to antiderivatives:</p>
+      <p>∫ₐᵇf(x)dx = F(b) - F(a), where F is an antiderivative of f.</p>
+      <p>Key properties:</p>
+      <ul>
+        <li>∫ₐᵇf(x)dx = -∫ᵇₐf(x)dx</li>
+        <li>∫ₐᵇ[f(x) + g(x)]dx = ∫ₐᵇf(x)dx + ∫ₐᵇg(x)dx</li>
+        <li>∫ₐᵇc·f(x)dx = c·∫ₐᵇf(x)dx where c is a constant</li>
+        <li>∫ₐᵇf(x)dx = ∫ₐᶜf(x)dx + ∫ᶜᵇf(x)dx for any c</li>
+      </ul>
+    </section>
+
+    <section class="flashcards-section">
+      <h2>Flashcards</h2>
+      <p>Click on a card to reveal the answer</p>
+      
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <p id="progressIndicator">Progress: 0%</p>
+      
+      <div class="flashcards-container">
+        <div class="flashcard" data-index="0">
+          <div class="card-content">
+            <div class="card-front">∫₀¹x²dx</div>
+            <div class="card-back">[x³/3]₀¹ = 1/3 - 0 = 1/3</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="1">
+          <div class="card-content">
+            <div class="card-front">∫₀ᵗsin(x)dx</div>
+            <div class="card-back">[-cos(x)]₀ᵗ = -cos(π) - (-cos(0)) = -(-1) - (-1) = 1 + 1 = 2</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="2">
+          <div class="card-content">
+            <div class="card-front">∫₁²(1/x)dx</div>
+            <div class="card-back">[ln|x|]₁² = ln(2) - ln(1) = ln(2)</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="3">
+          <div class="card-content">
+            <div class="card-front">∫₀¹e^xdx</div>
+            <div class="card-back">[e^x]₀¹ = e¹ - e⁰ = e - 1</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="4">
+          <div class="card-content">
+            <div class="card-front">∫₋₁¹|x|dx</div>
+            <div class="card-back">Split into: ∫₋₁⁰(-x)dx + ∫₀¹xdx<br>= [-x²/2]₋₁⁰ + [x²/2]₀¹<br>= (-0 - (-1/2)) + (1/2 - 0) = 1/2 + 1/2 = 1</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="5">
+          <div class="card-content">
+            <div class="card-front">∫₀^(π/2)sin²(x)dx</div>
+            <div class="card-back">Using sin²(x) = (1-cos(2x))/2:<br>∫₀^(π/2)(1-cos(2x))/2 dx<br>= [x/2 - sin(2x)/4]₀^(π/2)<br>= (π/4 - 0) - (0 - 0) = π/4</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Integral Flashcards - A learning resource for calculus students</p>
+  </footer>
+
+  <script src="../style/script.js"></script>
+</body>
+</html>

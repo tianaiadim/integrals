@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integration by Parts | Integral Flashcards</title>
+  <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+  <div class="page-transition"></div>
+  
+  <header>
+    <h1>Integration by Parts</h1>
+    <a href="../index.html" class="back-link">← Back to Topics</a>
+  </header>
+  
+  <main>
+    <section class="topic-explanation">
+      <h2>Understanding Integration by Parts</h2>
+      <p>Integration by parts is a technique used when integrating the product of two functions. It's based on the product rule for differentiation.</p>
+      <p>The formula is: ∫u(x)v'(x)dx = u(x)v(x) - ∫u'(x)v(x)dx</p>
+      <p>Alternatively written as: ∫udv = uv - ∫vdu</p>
+      <p>When to use it:</p>
+      <ul>
+        <li>Products of functions where one part becomes simpler when differentiated</li>
+        <li>Products involving logarithmic, inverse trigonometric, or algebraic functions</li>
+      </ul>
+      <p>A helpful mnemonic for choosing u and dv is "LIATE" (Logarithmic, Inverse trigonometric, Algebraic, Trigonometric, Exponential), which suggests the preferred order for choosing u.</p>
+    </section>
+
+    <section class="flashcards-section">
+      <h2>Flashcards</h2>
+      <p>Click on a card to reveal the answer</p>
+      
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <p id="progressIndicator">Progress: 0%</p>
+      
+      <div class="flashcards-container">
+        <div class="flashcard" data-index="0">
+          <div class="card-content">
+            <div class="card-front">∫x·sin(x)dx</div>
+            <div class="card-back">-x·cos(x) + ∫cos(x)dx<br>= -x·cos(x) + sin(x) + C</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="1">
+          <div class="card-content">
+            <div class="card-front">∫x·e^x dx</div>
+            <div class="card-back">x·e^x - ∫e^x dx<br>= x·e^x - e^x + C</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="2">
+          <div class="card-content">
+            <div class="card-front">∫ln(x)dx</div>
+            <div class="card-back">x·ln(x) - ∫x·(1/x)dx<br>= x·ln(x) - x + C</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="3">
+          <div class="card-content">
+            <div class="card-front">∫x²·cos(x)dx</div>
+            <div class="card-back">x²·sin(x) - ∫2x·sin(x)dx<br>= x²·sin(x) - 2x·(-cos(x)) + 2∫cos(x)dx<br>= x²·sin(x) + 2x·cos(x) - 2sin(x) + C</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="4">
+          <div class="card-content">
+            <div class="card-front">∫x·ln(x)dx</div>
+            <div class="card-back">(x²/2)·ln(x) - ∫(x²/2)·(1/x)dx<br>= (x²/2)·ln(x) - x²/4 + C</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="5">
+          <div class="card-content">
+            <div class="card-front">∫e^x·cos(x)dx</div>
+            <div class="card-back">e^x·sin(x) - ∫e^x·sin(x)dx<br>= e^x·sin(x) - [e^x·(-cos(x)) - ∫e^x·(-cos(x))dx]<br>= e^x·sin(x) + e^x·cos(x) - ∫e^x·cos(x)dx<br><br>Solving for the original integral:<br>∫e^x·cos(x)dx = (e^x·sin(x) + e^x·cos(x))/2 + C</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Integral Flashcards - A learning resource for calculus students</p>
+  </footer>
+
+  <script src="../style/script.js"></script>
+</body>
+</html>

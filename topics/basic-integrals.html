@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Integrals | Integral Flashcards</title>
+  <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+  <div class="page-transition"></div>
+  
+  <header>
+    <h1>Basic Integrals</h1>
+    <a href="../index.html" class="back-link">← Back to Topics</a>
+  </header>
+  
+  <main>
+    <section class="topic-explanation">
+      <h2>Understanding Basic Integrals</h2>
+      <p>Integration is the reverse process of differentiation. Basic integrals form the foundation for more complex integration techniques.</p>
+      <p>The indefinite integral of a function f(x) is written as ∫f(x)dx and represents the family of all antiderivatives of f(x).</p>
+      <p>Key properties to remember:</p>
+      <ul>
+        <li>∫[f(x) + g(x)]dx = ∫f(x)dx + ∫g(x)dx</li>
+        <li>∫c·f(x)dx = c·∫f(x)dx where c is a constant</li>
+        <li>∫xⁿdx = (xⁿ⁺¹)/(n+1) + C, where n ≠ -1</li>
+      </ul>
+    </section>
+
+    <section class="flashcards-section">
+      <h2>Flashcards</h2>
+      <p>Click on a card to reveal the answer</p>
+      
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <p id="progressIndicator">Progress: 0%</p>
+      
+      <div class="flashcards-container">
+        <div class="flashcard" data-index="0">
+          <div class="card-content">
+            <div class="card-front">∫xⁿdx</div>
+            <div class="card-back">(xⁿ⁺¹)/(n+1) + C, where n ≠ -1</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="1">
+          <div class="card-content">
+            <div class="card-front">∫dx</div>
+            <div class="card-back">x + C</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="2">
+          <div class="card-content">
+            <div class="card-front">∫1/x dx</div>
+            <div class="card-back">ln|x| + C</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="3">
+          <div class="card-content">
+            <div class="card-front">∫eˣdx</div>
+            <div class="card-back">eˣ + C</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="4">
+          <div class="card-content">
+            <div class="card-front">∫sin(x)dx</div>
+            <div class="card-back">-cos(x) + C</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="5">
+          <div class="card-content">
+            <div class="card-front">∫cos(x)dx</div>
+            <div class="card-back">sin(x) + C</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="6">
+          <div class="card-content">
+            <div class="card-front">∫tan(x)dx</div>
+            <div class="card-back">ln|sec(x)| + C</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="7">
+          <div class="card-content">
+            <div class="card-front">∫sec(x)dx</div>
+            <div class="card-back">ln|sec(x) + tan(x)| + C</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Integral Flashcards - A learning resource for calculus students</p>
+  </footer>
+
+  <script src="../style/script.js"></script>
+</body>
+</html>

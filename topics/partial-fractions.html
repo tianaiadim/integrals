@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partial Fractions | Integral Flashcards</title>
+  <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+  <div class="page-transition"></div>
+  
+  <header>
+    <h1>Partial Fractions</h1>
+    <a href="../index.html" class="back-link">← Back to Topics</a>
+  </header>
+  
+  <main>
+    <section class="topic-explanation">
+      <h2>Understanding Partial Fractions</h2>
+      <p>Partial fraction decomposition is a technique used to integrate rational functions (ratios of polynomials).</p>
+      <p>The basic idea is to break down a complex rational function into a sum of simpler fractions that are easier to integrate.</p>
+      <p>The general approach:</p>
+      <ol>
+        <li>Ensure the numerator's degree is less than the denominator's (if not, perform polynomial division first)</li>
+        <li>Factor the denominator completely</li>
+        <li>Decompose the fraction based on the factors in the denominator</li>
+        <li>Solve for the coefficients in the decomposition</li>
+        <li>Integrate each simple fraction</li>
+      </ol>
+    </section>
+
+    <section class="flashcards-section">
+      <h2>Flashcards</h2>
+      <p>Click on a card to reveal the answer</p>
+      
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <p id="progressIndicator">Progress: 0%</p>
+      
+      <div class="flashcards-container">
+        <div class="flashcard" data-index="0">
+          <div class="card-content">
+            <div class="card-front">∫(1/(x²-1))dx</div>
+            <div class="card-back">Decomposition: 1/(x²-1) = 1/2·[1/(x-1) - 1/(x+1)]<br>Integration: (1/2)ln|x-1| - (1/2)ln|x+1| + C<br>= (1/2)ln|(x-1)/(x+1)| + C</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="1">
+          <div class="card-content">
+            <div class="card-front">∫(x/(x²-4))dx</div>
+            <div class="card-back">Decomposition: x/(x²-4) = (1/2)·[1/(x-2) + 1/(x+2)]<br>Integration: (1/2)ln|x-2| + (1/2)ln|x+2| + C<br>= (1/2)ln|(x-2)(x+2)| + C<br>= (1/2)ln|x²-4| + C</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="2">
+          <div class="card-content">
+            <div class="card-front">∫(3x+2)/((x+1)(x+2))dx</div>
+            <div class="card-back">Decomposition: (3x+2)/((x+1)(x+2)) = A/(x+1) + B/(x+2)<br>Solving: A = 1, B = 2<br>Integration: ln|x+1| + 2ln|x+2| + C<br>= ln|x+1| + ln|(x+2)²| + C<br>= ln|(x+1)(x+2)²| + C</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="3">
+          <div class="card-content">
+            <div class="card-front">∫(1/(x²+4x+4))dx</div>
+            <div class="card-back">Factor: x²+4x+4 = (x+2)²<br>Integration: ∫(1/(x+2)²)dx = -1/(x+2) + C</div>
+          </div>
+        </div>
+        
+        <div class="flashcard" data-index="4">
+          <div class="card-content">
+            <div class="card-front">∫(x²+3x+5)/((x+1)(x²+4))dx</div>
+            <div class="card-back">Decomposition: (x²+3x+5)/((x+1)(x²+4)) = A/(x+1) + (Bx+C)/(x²+4)<br>Solving: A = 1, B = 0, C = 2<br>Integration: ln|x+1| + (2/2)·arctan(x/2) + C<br>= ln|x+1| + arctan(x/2) + C</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Integral Flashcards - A learning resource for calculus students</p>
+  </footer>
+
+  <script src="../style/script.js"></script>
+</body>
+</html>
